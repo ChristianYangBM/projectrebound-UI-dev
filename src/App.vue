@@ -1,18 +1,21 @@
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 import BrandMark from './components/BrandMark.vue'
+import ReboundIcon from './components/ReboundIcon.vue'
 import WaitlistForm from './components/WaitlistForm.vue'
 
 const menuOpen = ref(false)
 const currentYear = new Date().getFullYear()
 
-const features = [
+type FeatureIcon = 'scan' | 'inventory' | 'growth' | 'market' | 'profit' | 'listing' | 'analytics'
+
+const features: Array<{ icon: FeatureIcon; title: string; text: string }> = [
   { icon: 'scan', title: 'Fast ISBN Scanning', text: 'Evaluate books quickly with barcode, ISBN, and planned Bluetooth scanner support.' },
-  { icon: 'pulse', title: 'Real-Time Market Insights', text: 'Compare pricing, offers, rank, velocity, and Buy Box signals in one focused view.' },
-  { icon: 'calc', title: 'Profit & ROI Calculations', text: 'Model estimated fees, net profit, and ROI before deciding what belongs in your cart.' },
-  { icon: 'box', title: 'Inventory Management', text: 'Track condition, storage location, receiving, and each book’s inventory lifecycle.' },
-  { icon: 'tag', title: 'Listing & Repricing Tools', text: 'Support FBA and merchant-fulfilled listing workflows with future automated repricing.' },
-  { icon: 'chart', title: 'Analytics & Team Workflows', text: 'Understand sourcing performance and coordinate teams across multiple locations.' },
+  { icon: 'market', title: 'Real-Time Market Insights', text: 'Compare pricing, offers, rank, velocity, and Buy Box signals in one focused view.' },
+  { icon: 'profit', title: 'Profit & ROI Calculations', text: 'Model estimated fees, net profit, and ROI before deciding what belongs in your cart.' },
+  { icon: 'inventory', title: 'Inventory Management', text: 'Track condition, storage location, receiving, and each book’s inventory lifecycle.' },
+  { icon: 'listing', title: 'Listing & Repricing Tools', text: 'Support FBA and merchant-fulfilled listing workflows with future automated repricing.' },
+  { icon: 'analytics', title: 'Analytics & Team Workflows', text: 'Understand sourcing performance and coordinate teams across multiple locations.' },
 ]
 
 const workflow = ['Scan', 'Evaluate', 'Purchase', 'Inventory', 'List', 'Sell']
@@ -45,7 +48,6 @@ onBeforeUnmount(() => window.removeEventListener('keydown', handleKey))
     <main id="top">
       <section class="hero container">
         <div class="hero-copy reveal">
-          <p class="eyebrow"><span></span> Built for book resellers</p>
           <h1>Scan smarter.<br />Source better.<br /><em>Sell more.</em></h1>
           <p class="hero-lede">Meet Rebound—the next-generation platform being designed to help book resellers scan inventory, evaluate profitability, manage listings, and grow their business. All in one place.</p>
           <WaitlistForm compact source="hero" />
@@ -87,26 +89,25 @@ onBeforeUnmount(() => window.removeEventListener('keydown', handleKey))
       <section class="tool-problem section-pad">
         <div class="container">
           <div class="section-heading centered">
-            <p class="eyebrow centered-eye"><span></span> ONE CONNECTED WORKFLOW</p>
             <h2>Book reselling shouldn’t require five different tools.</h2>
             <p>Scanning, price research, profitability math, inventory, and listings are often split across disconnected apps. Rebound is being built to bring the workflow together.</p>
           </div>
           <div class="solution-grid">
-            <article><span class="card-number">01</span><div class="icon-tile">⌁</div><h3>Scan with Confidence</h3><p>Quickly evaluate books using marketplace information, pricing insights, and estimated profitability.</p></article>
-            <article><span class="card-number">02</span><div class="icon-tile">▦</div><h3>Manage Everything</h3><p>Organize inventory, track books through their lifecycle, and simplify day-to-day operations.</p></article>
-            <article><span class="card-number">03</span><div class="icon-tile">↗</div><h3>Grow with Better Data</h3><p>Use sourcing insights, performance metrics, and analytics to make better business decisions.</p></article>
+            <article><div class="icon-tile"><ReboundIcon name="scan" /></div><h3>Scan with Confidence</h3><p>Quickly evaluate books using marketplace information, pricing insights, and estimated profitability.</p></article>
+            <article><div class="icon-tile"><ReboundIcon name="inventory" /></div><h3>Manage Everything</h3><p>Organize inventory, track books through their lifecycle, and simplify day-to-day operations.</p></article>
+            <article><div class="icon-tile"><ReboundIcon name="growth" /></div><h3>Grow with Better Data</h3><p>Use sourcing insights, performance metrics, and analytics to make better business decisions.</p></article>
           </div>
         </div>
       </section>
 
       <section id="features" class="features section-pad container">
         <div class="section-heading split-heading">
-          <div><p class="eyebrow"><span></span> PLANNED CAPABILITIES</p><h2>Everything you need.<br />One platform.</h2></div>
+          <div><h2>Everything you need.<br />One platform.</h2><span class="section-note">PLANNED CAPABILITIES</span></div>
           <p>Rebound is being designed as the connected operating system for serious book-reselling workflows—from the first scan through the final sale.</p>
         </div>
         <div class="feature-grid">
           <article v-for="feature in features" :key="feature.title" class="feature-card">
-            <div class="feature-top"><span class="feature-icon" :data-icon="feature.icon"></span><span class="planned">PLANNED</span></div>
+            <div class="feature-top"><span class="feature-icon"><ReboundIcon :name="feature.icon" /></span><span class="planned">PLANNED</span></div>
             <h3>{{ feature.title }}</h3><p>{{ feature.text }}</p>
           </article>
         </div>
@@ -115,7 +116,6 @@ onBeforeUnmount(() => window.removeEventListener('keydown', handleKey))
       <section id="how-it-works" class="workflow-section section-pad">
         <div class="container">
           <div class="section-heading centered light-heading">
-            <p class="eyebrow centered-eye"><span></span> THE FULL LIFECYCLE</p>
             <h2>From first scan to final sale.</h2>
             <p>Rebound is being built to support the entire book-resale process—not just the moment a barcode is scanned.</p>
           </div>
@@ -131,7 +131,6 @@ onBeforeUnmount(() => window.removeEventListener('keydown', handleKey))
         <div class="waitlist-glow"></div>
         <div class="container waitlist-inner">
           <div class="section-heading centered light-heading">
-            <p class="eyebrow centered-eye"><span></span> EARLY ACCESS</p>
             <h2>Be first to Rebound.</h2>
             <p>We’re building something new for the book-reselling community. Join for product updates, launch announcements, and opportunities to help shape Rebound.</p>
           </div>
