@@ -1,20 +1,6 @@
-:root {
-  --bg: #f7f7f5;
-  --surface: #ffffff;
-  --ink: #121714;
-  --muted: #667069;
-  --line: #dde2de;
-  --green: #173f2c;
-  --green-2: #235b40;
-  --lime: #bff26b;
-  --lime-soft: #e4f8c4;
-  --ease-out: cubic-bezier(.23, 1, .32, 1);
-  --container: 1180px;
-}
-
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 92px; }
-body { margin: 0; color: var(--ink); background: var(--bg); font-family: 'Manrope', sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0; color: var(--pr-color-text); background: var(--pr-color-canvas); font-family: var(--pr-font-sans); -webkit-font-smoothing: antialiased; }
 ::selection { color: #102116; background: var(--lime); }
 * { scrollbar-color: #89a194 var(--bg); scrollbar-width: thin; }
 button, input { font: inherit; }
@@ -61,9 +47,9 @@ h1 em { color: var(--green-2); font-style: normal; }
 .consent-row input { flex: 0 0 auto; width: 16px; height: 16px; margin: 1px 0 0; accent-color: var(--green); }
 .consent-row input:focus-visible { outline: 3px solid rgba(35,91,64,.28); outline-offset: 2px; }
 .form-status { min-height: 19px; margin: 8px 3px 0; font-size: 12px; font-weight: 650; }
-.form-status.error { color: #a33225; }
+.form-status.error { color: var(--pr-color-error); }
 .spinner { width: 15px; height: 15px; border: 2px solid rgba(16,33,22,.25); border-top-color: #102116; border-radius: 50%; animation: spin .65s linear infinite; }
-.success-panel { display: flex; align-items: flex-start; gap: 14px; padding: 19px; color: #153923; background: #ecf8e2; border: 1px solid #c5e7ad; border-radius: 11px; text-align: left; }
+.success-panel { display: flex; align-items: flex-start; gap: 14px; padding: 19px; color: #153923; background: var(--pr-color-success-soft); border: 1px solid #c5e7ad; border-radius: 11px; text-align: left; }
 .success-icon { flex: 0 0 auto; width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; color: white; background: var(--green-2); font-weight: 800; }
 .success-panel strong { display: block; font-size: 15px; }
 .success-panel p { margin: 4px 0 0; color: #55715e; font-size: 11px; line-height: 1.5; }

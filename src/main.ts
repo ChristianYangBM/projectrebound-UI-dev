@@ -6,6 +6,7 @@ import '@fontsource/manrope/latin-700.css'
 import '@fontsource/manrope/latin-800.css'
 import '@fontsource/dm-mono/latin-500.css'
 import App from './App.vue'
+import '../design-system/tokens.css'
 import './styles.css'
 
 createApp(App).mount('#app')

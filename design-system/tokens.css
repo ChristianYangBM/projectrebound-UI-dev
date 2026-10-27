@@ -1,0 +1,105 @@
+/**
+ * Project Rebound design tokens
+ * Status: client approval draft — 2026-10-26
+ *
+ * Components should consume semantic tokens. Primitive colors are included for
+ * reference and controlled exceptions, which makes a future name or palette
+ * change possible without rewriting component styles.
+ */
+:root {
+  /* Color primitives */
+  --pr-color-forest-950: #0e1d14;
+  --pr-color-forest-900: #11281c;
+  --pr-color-forest-800: #163825;
+  --pr-color-forest-700: #173f2c;
+  --pr-color-forest-600: #235b40;
+  --pr-color-lime-400: #bff26b;
+  --pr-color-lime-300: #caf880;
+  --pr-color-lime-100: #e4f8c4;
+  --pr-color-neutral-0: #ffffff;
+  --pr-color-neutral-50: #f7f7f5;
+  --pr-color-neutral-100: #f4f6f3;
+  --pr-color-neutral-200: #dde2de;
+  --pr-color-neutral-500: #667069;
+  --pr-color-neutral-700: #34443b;
+  --pr-color-neutral-950: #121714;
+
+  /* Semantic color */
+  --pr-color-canvas: var(--pr-color-neutral-50);
+  --pr-color-surface: var(--pr-color-neutral-0);
+  --pr-color-surface-subtle: var(--pr-color-neutral-100);
+  --pr-color-text: var(--pr-color-neutral-950);
+  --pr-color-text-muted: var(--pr-color-neutral-500);
+  --pr-color-text-inverse: var(--pr-color-neutral-0);
+  --pr-color-border: var(--pr-color-neutral-200);
+  --pr-color-brand: var(--pr-color-forest-700);
+  --pr-color-brand-hover: var(--pr-color-forest-600);
+  --pr-color-brand-deep: var(--pr-color-forest-900);
+  --pr-color-accent: var(--pr-color-lime-400);
+  --pr-color-accent-hover: var(--pr-color-lime-300);
+  --pr-color-accent-soft: var(--pr-color-lime-100);
+  --pr-color-focus: rgba(35, 91, 64, 0.28);
+  --pr-color-success: #237a4b;
+  --pr-color-success-soft: #ecf8e2;
+  --pr-color-warning: #a75f0d;
+  --pr-color-warning-soft: #fff2dc;
+  --pr-color-error: #a33225;
+  --pr-color-error-soft: #fde9e5;
+  --pr-color-info: #326ea8;
+  --pr-color-info-soft: #e8f2fb;
+
+  /* Typography */
+  --pr-font-sans: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --pr-font-mono: 'DM Mono', ui-monospace, SFMono-Regular, Consolas, monospace;
+  --pr-weight-regular: 400;
+  --pr-weight-medium: 500;
+  --pr-weight-semibold: 600;
+  --pr-weight-bold: 700;
+  --pr-weight-extrabold: 800;
+
+  /* Spacing: 4px base rhythm */
+  --pr-space-1: 4px;
+  --pr-space-2: 8px;
+  --pr-space-3: 12px;
+  --pr-space-4: 16px;
+  --pr-space-5: 20px;
+  --pr-space-6: 24px;
+  --pr-space-8: 32px;
+  --pr-space-10: 40px;
+  --pr-space-12: 48px;
+  --pr-space-16: 64px;
+  --pr-space-20: 80px;
+  --pr-space-24: 96px;
+  --pr-space-30: 120px;
+
+  /* Shape and elevation */
+  --pr-radius-sm: 6px;
+  --pr-radius-md: 9px;
+  --pr-radius-lg: 12px;
+  --pr-radius-xl: 17px;
+  --pr-radius-round: 999px;
+  --pr-shadow-sm: 0 14px 35px rgba(26, 42, 33, 0.08);
+  --pr-shadow-md: 0 20px 50px rgba(17, 36, 23, 0.12);
+  --pr-shadow-lg: 0 36px 90px rgba(17, 33, 24, 0.14);
+
+  /* Motion and layout */
+  --pr-duration-fast: 140ms;
+  --pr-duration-normal: 180ms;
+  --pr-duration-reveal: 650ms;
+  --pr-ease-standard: ease;
+  --pr-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --pr-layout-container: 1180px;
+
+  /* Compatibility aliases — retire as components migrate */
+  --bg: var(--pr-color-canvas);
+  --surface: var(--pr-color-surface);
+  --ink: var(--pr-color-text);
+  --muted: var(--pr-color-text-muted);
+  --line: var(--pr-color-border);
+  --green: var(--pr-color-brand);
+  --green-2: var(--pr-color-brand-hover);
+  --lime: var(--pr-color-accent);
+  --lime-soft: var(--pr-color-accent-soft);
+  --ease-out: var(--pr-ease-out);
+  --container: var(--pr-layout-container);
+}
