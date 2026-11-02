@@ -5,8 +5,12 @@ import '@fontsource/manrope/latin-600.css'
 import '@fontsource/manrope/latin-700.css'
 import '@fontsource/manrope/latin-800.css'
 import '@fontsource/dm-mono/latin-500.css'
+import '@fontsource/cormorant-garamond/latin-500.css'
+import '@fontsource/cormorant-garamond/latin-600.css'
+import '@fontsource/cormorant-garamond/latin-700.css'
 import App from './App.vue'
+import router from './app/router'
 import '../design-system/tokens.css'
 import './styles.css'
 
-createApp(App).mount('#app')
+createApp(App).use(router).mount('#app')

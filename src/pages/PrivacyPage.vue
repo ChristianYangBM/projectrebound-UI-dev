@@ -1,0 +1,2 @@
+<script setup lang="ts">import MarketingLayout from '../components/MarketingLayout.vue'</script>
+<template><MarketingLayout><article class="legal-page page-wrap"><h1>Privacy</h1><p>This page is reserved for Rebound’s reviewed privacy policy. Before launch, it should explain what information is collected, why it is collected, how it is stored, which providers process it, and how subscribers can request access or removal.</p><p>The waitlist currently requests an email address and explicit consent to receive product and launch updates.</p></article></MarketingLayout></template>

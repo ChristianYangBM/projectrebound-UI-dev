@@ -1,0 +1,59 @@
+{
+  "regions": [
+    {
+      "id": "paper-ground",
+      "kind": "texture",
+      "grid": "A0:J9",
+      "note": "Warm lightly mottled auction-catalogue paper ground behind the entire composition."
+    },
+    {
+      "id": "masthead",
+      "kind": "chrome",
+      "grid": "A0:J0",
+      "note": "Brand mark, Rebound wordmark, descriptor, primary navigation, and early-access action."
+    },
+    {
+      "id": "hero-display",
+      "kind": "text",
+      "grid": "A1:E5",
+      "note": "Lot label and oversized editorial statement with cobalt emphasis."
+    },
+    {
+      "id": "hero-summary",
+      "kind": "text",
+      "grid": "A5:E6",
+      "note": "Product positioning paragraph describing the connected reseller lifecycle."
+    },
+    {
+      "id": "hero-action",
+      "kind": "control",
+      "grid": "A7:C7",
+      "note": "Primary Get Early Access call to action."
+    },
+    {
+      "id": "preview-disclosure",
+      "kind": "text",
+      "grid": "C7:E7",
+      "note": "Concept preview and sample-data disclosure adjacent to the primary action."
+    },
+    {
+      "id": "book-object",
+      "kind": "plate",
+      "grid": "E1:H7",
+      "note": "Hero catalogue specimen: an aged blue first-edition book with handwritten condition annotations and arrows."
+    },
+    {
+      "id": "catalogue-record",
+      "kind": "chrome",
+      "grid": "H1:J7",
+      "note": "Structured book record with title, edition, publisher, condition, value, provenance, lifecycle, rules, and concept-preview stamp."
+    },
+    {
+      "id": "lifecycle-strip",
+      "kind": "chrome",
+      "grid": "A8:J9",
+      "codeDrawn": true,
+      "note": "Six-stage horizontal lifecycle strip: Scan, Evaluate, Inventory, List, Reprice, Sell, each with a small line illustration and concise explanation."
+    }
+  ]
+}

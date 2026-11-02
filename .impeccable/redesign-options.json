@@ -1,0 +1,72 @@
+{
+  "title": "Choose Rebound’s new visual world",
+  "question": "Each direction redesigns every public surface while preserving the Rebound mark, product story, routes, and waitlist conversion.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Exposed Binding",
+      "kicker": "THE ROLL",
+      "lineage": "bookbinding signatures, page edges, thread, and colophon marks",
+      "thesis": "The entire website behaves like a book being assembled into one connected operating record.",
+      "palette": ["#F1E9DA", "#191713", "#3159F5", "#F04B32"],
+      "materials": ["uncoated paper", "exposed binding thread", "folio rules"],
+      "viewport": "A split-open book fills the first screen: one signature carries the product promise while the other binds scan, inventory, list, and sell into a continuous edge.",
+      "risk": "Book craft can feel boutique unless the product demonstrations stay operational and precise.",
+      "raised": [
+        {"from":"Teletext Service","raise":"The product data becomes more immediate, coded, and visibly live."},
+        {"from":"Daylight Section","raise":"Every route reads as one continuous section through the book lifecycle."},
+        {"from":"Weimar Bill","raise":"The first viewport commits to a sharper silhouette and harder contrast."}
+      ],
+      "comp": ".impeccable/mocks/redesign/assigned.png"
+    },
+    {
+      "id": "model-pick",
+      "label": "Auction Catalogue",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "annotated rare-book auction catalogues and dealer lot sheets",
+      "thesis": "Every Rebound capability is presented as a catalogued lot with evidence, condition, value, and provenance.",
+      "palette": ["#EEE8DA", "#171613", "#244FE8", "#B33A2B"],
+      "materials": ["catalogue stock", "lot stamps", "margin annotations"],
+      "viewport": "A monumental lot page introduces Rebound beside one annotated book record whose value and lifecycle are visible in the margins.",
+      "risk": "The most naturally legible direction, but also the closest to familiar editorial web design.",
+      "comp": ".impeccable/mocks/redesign/model-pick.png"
+    },
+    {
+      "id": "challenger-teletext",
+      "label": "Reseller Teletext",
+      "verdict": "competitive",
+      "lineage": "broadcast teletext service",
+      "thesis": "Rebound becomes a live reseller information service where every capability has a fast, numbered destination.",
+      "palette": ["#090A0D", "#F2F2EE", "#36D7FF", "#F4E64A"],
+      "materials": ["block mosaic", "phosphor cells", "live page index"],
+      "viewport": "A strict information grid shows live sourcing data, the lifecycle index, and a direct early-access command.",
+      "case": "Exceptionally memorable and data-native, but less familiar and comfortable for long marketing reads.",
+      "risk": "Can become retro novelty if the grid loses discipline or uses too many colors.",
+      "comp": ".impeccable/mocks/redesign/challenger-teletext.png",
+      "hero": "https://impeccable.style/worlds/cards/broadcast-programming-teletext-service-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/broadcast-programming-teletext-service.webp"
+    },
+    {
+      "id": "challenger-daylight",
+      "label": "Lifecycle Section",
+      "verdict": "competitive",
+      "lineage": "architectural daylight section",
+      "thesis": "The site cuts through Rebound in section, revealing how one book moves through every operational room.",
+      "palette": ["#F2EFE7", "#212329", "#F2B544", "#6079A8"],
+      "materials": ["section-cut charcoal", "warm light band", "measured annotations"],
+      "viewport": "One continuous sectional drawing carries a book from scan to sale while the product promise rides the moving band of light.",
+      "case": "Strong lifecycle clarity and spatial memory, though it requires authored sectional illustration across the system.",
+      "risk": "The architectural metaphor may initially feel less connected to books than binding or catalogue systems.",
+      "comp": ".impeccable/mocks/redesign/challenger-daylight.png",
+      "hero": "https://impeccable.style/worlds/cards/architecture-inhabitable-space-daylight-section-hero.webp"
+    },
+    {
+      "id":"challenger-weimar","label":"Hard-Cut Programme","verdict":"declined","lineage":"two-ink expressionist programme bill","thesis":"The product launch unfolds as a hard-edged programme of operational acts.","palette":["#F2D92F","#111111","#F2EEE4"],"materials":["two-ink stock","hard light cuts","stepped programme"],"viewport":"A dramatic stepped promise introduces the operational acts.","case":"Memorable, but too theatrical for sustained product trust.","kept":"Commit the first viewport to a decisive silhouette.","risk":"Can overwhelm careful product explanation.","hero":"https://impeccable.style/worlds/cards/posters-covers-sleeves-weimar-cabaret-bill-hero.webp"
+    }
+  ],
+  "reroll":{"registers":["safer","bolder"]},
+  "buildPath":{"value":"comp","toggle":true},
+  "canon":true,
+  "canonCard":{"label":"The category standard","thesis":"A premium contemporary SaaS site with large type, product frames, and cobalt conversion actions.","palette":["#F2F0EB","#191B1F","#2457F5"],"materials":["clean grid","dark product frames","soft stone surfaces"],"viewport":"The current Rebound structure executed at full craft.","risk":"Clear and professional, but not meaningfully more memorable than the existing site.","comp":".impeccable/mocks/redesign/canon.png"},
+  "steer":true
+}

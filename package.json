@@ -11,6 +11,7 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@fontsource/cormorant-garamond": "^5.3.0",
     "@fontsource/dm-mono": "^5.2.7",
     "@fontsource/manrope": "^5.2.7",
     "@supabase/supabase-js": "^2.76.1",
@@ -19,6 +20,7 @@
     "express-rate-limit": "^8.1.0",
     "helmet": "^8.1.0",
     "vue": "^3.5.22",
+    "vue-router": "^4.6.4",
     "zod": "^4.1.12"
   },
   "devDependencies": {

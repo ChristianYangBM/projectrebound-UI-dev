@@ -1,0 +1,2 @@
+<script setup lang="ts">import { RouterLink } from 'vue-router'</script>
+<template><section class="access-band"><div class="page-wrap access-band-inner"><div><h2>Build a better book business from the first scan.</h2><p>Join the early-access list for product previews and launch updates.</p></div><RouterLink class="button-primary light" to="/early-access">Get early access <span aria-hidden="true">→</span></RouterLink></div></section></template>

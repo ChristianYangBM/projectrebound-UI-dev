@@ -1,0 +1,2 @@
+<script setup lang="ts">import { RouterLink } from 'vue-router'; import BrandMark from '../components/BrandMark.vue'</script>
+<template><main class="utility-page"><RouterLink class="brand-link" to="/"><BrandMark /><span>REBOUND</span></RouterLink><div class="utility-panel"><span class="error-code">404</span><h1>This book is not on the shelf.</h1><p>The page may have moved, or the address may be incorrect.</p><RouterLink class="button-primary" to="/">Return home →</RouterLink></div></main></template>
